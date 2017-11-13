@@ -17,6 +17,7 @@
 
 #pragma once
 
-void ms56xxSpiInit(void);
-bool ms56xxSpiReadCommand(uint8_t reg, uint8_t length, uint8_t *data);
-bool ms56xxSpiWriteCommand(uint8_t reg, uint8_t data);
+#include "drivers/sensor.h"
+
+bool mpu6000AccDetect(accDev_t *acc);
+bool mpu6000GyroDetect(gyroDev_t *gyro);

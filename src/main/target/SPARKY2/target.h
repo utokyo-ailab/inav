@@ -31,35 +31,33 @@
 
 #define INVERTER_PIN_UART6      PC6
 
-// MPU9250 interrupt
 #define USE_EXTI
-#define MPU_INT_EXTI            PC5
-#define EXTI_CALLBACK_HANDLER_COUNT 1 // MPU data ready
-//#define DEBUG_MPU_DATA_READY_INTERRUPT
 #define USE_MPU_DATA_READY_SIGNAL
 #define ENSURE_MPU_DATA_READY_IS_LOW
 
-#define MPU6500_CS_PIN          PC4
-#define MPU6500_SPI_INSTANCE    SPI1
-
 #define GYRO
-#define USE_GYRO_SPI_MPU6500
-#define GYRO_MPU6500_ALIGN      CW270_DEG
+#define USE_GYRO_MPU9250
+#define GYRO_MPU9250_ALIGN      CW270_DEG
 
 #define ACC
-#define USE_ACC_SPI_MPU6500
-#define ACC_MPU6500_ALIGN       CW270_DEG
+#define USE_ACC_MPU9250
+#define ACC_MPU9250_ALIGN       CW270_DEG
+
+#define MPU9250_SPI_BUS         BUS_SPI1
+#define MPU9250_CS_PIN          PC4
+#define MPU_INT_EXTI            PC5
 
 #define MAG
-#define USE_MPU9250_MAG
-#define USE_MAG_AK8963
-#define USE_MAG_AK8975
+#define USE_MAG_MPU9250
+#define MAG_MPU9250_ALIGN       CW270_DEG
+
+#define MAG_I2C_BUS             BUS_I2C1
 #define USE_MAG_HMC5883
 #define USE_MAG_MAG3110
 #define USE_MAG_QMC5883
-#define MAG_AK8963_ALIGN        CW270_DEG
 
 #define BARO
+#define BARO_I2C_BUS            BUS_I2C1
 #define USE_BARO_MS5611
 #define USE_BARO_BMP085
 #define USE_BARO_BMP280

@@ -542,6 +542,7 @@ VPATH           := $(VPATH):$(TARGET_DIR)
 COMMON_SRC = \
             $(TARGET_DIR_SRC) \
             main.c \
+            target/common_hardware.c \
             build/assert.c \
             build/build_config.c \
             build/debug.c \
