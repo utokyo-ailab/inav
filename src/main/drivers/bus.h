@@ -102,6 +102,7 @@ typedef enum {
 
     /* Rangefinder modules */
     DEVHW_SRF10,
+    DEVHW_HCSR04_I2C,   // DIY-style adapter
 } devHardwareType_e;
 
 typedef enum {

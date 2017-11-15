@@ -129,6 +129,10 @@
     BUSDEV_REGISTER_I2C(busdev_srf10,       DEVHW_SRF10,        SRF10_I2C_BUS,      0x70,               NONE,           DEVFLAGS_NONE);
 #endif
 
+#if defined(USE_RANGEFINDER_HCSR04_I2C)
+    BUSDEV_REGISTER_I2C(busdev_hcsr04,      DEVHW_HCSR04_I2C,   HCSR04_I2C_BUS,     0x14,               NONE,           DEVFLAGS_NONE);
+#endif
+
 #endif  // USE_TARGET_HARDWARE_DESCRIPTORS
 
 
