@@ -125,6 +125,10 @@
     BUSDEV_REGISTER_SPI(busdev_max7456,     DEVHW_MAX7456,      MAX7456_SPI_BUS,    MAX7456_CS_PIN,     NONE,           DEVFLAGS_USE_RAW_REGISTERS);
 #endif
 
+#if defined(USE_RANGEFINDER_SRF10)
+    BUSDEV_REGISTER_I2C(busdev_srf10,       DEVHW_SRF10,        SRF10_I2C_BUS,      0x70,               NONE,           DEVFLAGS_NONE);
+#endif
+
 #endif  // USE_TARGET_HARDWARE_DESCRIPTORS
 
 

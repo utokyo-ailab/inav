@@ -673,11 +673,11 @@ HIGHEND_SRC = \
             common/colorconversion.c \
             common/gps_conversion.c \
             drivers/display_ug2864hsweg01.c \
-            drivers/rangefinder_hcsr04.c \
-            drivers/rangefinder_hcsr04_i2c.c \
-            drivers/rangefinder_srf10.c \
+            drivers/rangefinder/rangefinder_hcsr04.c \
+            drivers/rangefinder/rangefinder_hcsr04_i2c.c \
+            drivers/rangefinder/rangefinder_srf10.c \
+            drivers/rangefinder/rangefinder_vl53l0x.c \
             drivers/opflow_fake.c \
-            drivers/rangefinder_vl53l0x.c \
             drivers/vtx_common.c \
             io/dashboard.c \
             io/displayport_max7456.c \

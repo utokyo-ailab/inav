@@ -17,7 +17,7 @@
 
 #pragma once
 
-#include "drivers/rangefinder.h"
+#include "drivers/rangefinder/rangefinder.h"
 
 #define RANGEFINDER_HCSR04_TASK_PERIOD_MS 70
 

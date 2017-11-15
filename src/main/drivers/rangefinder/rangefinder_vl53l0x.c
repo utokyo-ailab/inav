@@ -108,8 +108,8 @@
 #include "drivers/time.h"
 #include "drivers/bus_i2c.h"
 
-#include "drivers/rangefinder.h"
-#include "drivers/rangefinder_vl53l0x.h"
+#include "drivers/rangefinder/rangefinder.h"
+#include "drivers/rangefinder/rangefinder_vl53l0x.h"
 
 #include "build/debug.h"
 

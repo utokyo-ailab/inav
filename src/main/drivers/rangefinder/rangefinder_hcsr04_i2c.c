@@ -27,8 +27,8 @@
 #include "drivers/time.h"
 #include "drivers/bus_i2c.h"
 
-#include "drivers/rangefinder.h"
-#include "drivers/rangefinder_hcsr04_i2c.h"
+#include "drivers/rangefinder/rangefinder.h"
+#include "drivers/rangefinder/rangefinder_hcsr04_i2c.h"
 
 #include "build/debug.h"
 

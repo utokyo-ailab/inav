@@ -99,6 +99,9 @@ typedef enum {
 
     /* OSD chips */
     DEVHW_MAX7456,
+
+    /* Rangefinder modules */
+    DEVHW_SRF10,
 } devHardwareType_e;
 
 typedef enum {

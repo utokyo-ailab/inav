@@ -124,9 +124,16 @@
 #define I2C3_SDA                PC9
 
 #define USE_RANGEFINDER
+
 #define USE_RANGEFINDER_HCSR04
-#define RANGEFINDER_HCSR04_TRIGGER_PIN       PB8
-#define RANGEFINDER_HCSR04_ECHO_PIN          PB9
+#define RANGEFINDER_HCSR04_TRIGGER_PIN      PB8
+#define RANGEFINDER_HCSR04_ECHO_PIN         PB9
+
+#define USE_RANGEFINDER_SRF10
+#define SRF10_I2C_BUS                       BUS_I2C3
+
+#define USE_RANGEFINDER_VL53L0X
+#define VL53L0X_I2C_BUS                     BUS_I2C3
 
 #define TARGET_CONFIG
 

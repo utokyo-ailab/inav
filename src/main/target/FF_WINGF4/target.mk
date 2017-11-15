@@ -7,7 +7,7 @@ TARGET_SRC = \
              drivers/compass/compass_mpu9250.c \
              drivers/barometer/barometer_ms56xx.c \
              drivers/compass/compass_hmc5883l.c \
-             drivers/rangefinder_hcsr04.c \
+             drivers/rangefinder/rangefinder_hcsr04.c \
              drivers/serial_usb_vcp.c \
              drivers/max7456.c
              
