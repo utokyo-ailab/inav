@@ -141,6 +141,7 @@
 #define BIND_PIN                PA3 // USART2, PA3
 
 #define USE_RANGEFINDER
+#define RANGEFINDER_I2C_BUS                 BUS_I2C1
 #define USE_RANGEFINDER_HCSR04
 #define RANGEFINDER_HCSR04_TRIGGER_PIN       PB0
 #define RANGEFINDER_HCSR04_ECHO_PIN          PB1

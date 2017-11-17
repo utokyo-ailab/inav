@@ -126,10 +126,16 @@
 #endif
 
 #if defined(USE_RANGEFINDER_SRF10)
+    #if !defined(SRF10_I2C_BUS)
+        #define SRF10_I2C_BUS RANGEFINDER_I2C_BUS
+    #endif
     BUSDEV_REGISTER_I2C(busdev_srf10,       DEVHW_SRF10,        SRF10_I2C_BUS,      0x70,               NONE,           DEVFLAGS_NONE);
 #endif
 
 #if defined(USE_RANGEFINDER_HCSR04_I2C)
+    #if !defined(HCSR04_I2C_BUS)
+        #define HCSR04_I2C_BUS RANGEFINDER_I2C_BUS
+    #endif
     BUSDEV_REGISTER_I2C(busdev_hcsr04,      DEVHW_HCSR04_I2C,   HCSR04_I2C_BUS,     0x14,               NONE,           DEVFLAGS_NONE);
 #endif
 
