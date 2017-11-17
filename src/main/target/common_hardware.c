@@ -61,7 +61,7 @@
     #if !defined(BMP085_I2C_BUS)
         #define BMP085_I2C_BUS BARO_I2C_BUS
     #endif
-    BUSDEV_REGISTER_I2C(busdev_bmp085,      DEVHW_BMP280,       BMP085_I2C_BUS,     0x77,               NONE,           DEVFLAGS_NONE);
+    BUSDEV_REGISTER_I2C(busdev_bmp085,      DEVHW_BMP085,       BMP085_I2C_BUS,     0x77,               NONE,           DEVFLAGS_NONE);
 #endif
 
 #if defined(USE_BARO_BMP280)

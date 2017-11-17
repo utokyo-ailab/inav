@@ -162,9 +162,10 @@ static bool deviceDetect(busDevice_t * busDev)
     for (int retry = 0; retry < DETECTION_MAX_RETRY_COUNT; retry++) {
         uint8_t chipId = 0;
 
-        delay(10);
+        delay(100);
 
         bool ack = busRead(busDev, BMP280_CHIP_ID_REG, &chipId);
+
         if (ack && chipId == BMP280_DEFAULT_CHIP_ID) {
             return true;
         }
@@ -180,12 +181,12 @@ bool bmp280Detect(baroDev_t *baro)
         return false;
     }
 
+    busSetSpeed(baro->busDev, BUS_SPEED_STANDARD);
+
     if (!deviceDetect(baro->busDev)) {
         busDeviceDeInit(baro->busDev);
         return false;
     }
-
-    busSetSpeed(baro->busDev, BUS_SPEED_STANDARD);
 
     // read calibration
     busReadBuf(baro->busDev, BMP280_TEMPERATURE_CALIB_DIG_T1_LSB_REG, (uint8_t *)&bmp280_cal, 24);
